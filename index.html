@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="font-size:60px; text-align:center; font-family:verdana; background-color:tomato; border:2px solid rgb(255, 30, 30); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">ELECTRONICS HUB</h1>
+        <nav><hr>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/Ecome.html">Products</a></li>
+                <li><button id="show-cart">Cart</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="cart-container" id="cart-container">
+            <span class="close-cart" id="close-cart">&times;</span>
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+         </div>
+        
+
+        <style>
+            table, th, td {
+              border:1px solid rgb(27, 25, 25);
+              
+            }
+            tr:hover {background-color: #fbd3df;}
+            td:nth-child(even), th:nth-child(even) {
+                background-color: #cbd3d3;
+            }
+        </style>
+        
+        <table align="center" id="product-table">
+            <tr ><th colspan="3">Our Products</th></tr>
+            <tr>    
+              <th>Product</th>
+              <th>Product Description </th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>ARDUINO UNO R3</td>
+              <td>ARDUINO SMD UNO R3 Board ATmega328P</td>
+              <td>Rs.549</td>
+            </tr>
+            <tr>
+              <td>ARDUINO NANO</td>
+              <td>RoboElectrixx Nano V3 CH 340 with USB Cable soldered board</td>
+              <td>Rs.514</td>
+            </tr>
+            <tr>
+                <td>HC-05 Bluetooth Model</td>
+                <td>Robodo W2 Hc 05 Wireless Bluetooth Rf Transceiver Module Serial or TTL or RS232 for Arduino</td>
+                <td>Rs.409</td>
+            </tr>
+            <tr>
+                <td>MQ-02 Gas Sensor</td>
+                <td>MQ 02 Gas Sensor(LPG, i-Butane, Propane, Methane,Alcohol, Hydrogen, Smoke)</td>
+                <td>Rs.184</td>
+            </tr>
+          </table>
+        <br>  
+        <br>
+        
+    </main>
+
+    <div class="row">
+        <div class="column">
+            <section  class="product">
+                <a href="https://www.amazon.in/Scriptronics-ATmega328P-Development-Compatible-Arduino/dp/B08VYNMD26/ref=sr_1_7?adgrpid=1321614584176008&hvadid=82601169741710&hvbmt=be&hvdev=c&hvlocphy=155058&hvnetw=o&hvqmt=e&hvtargid=kwd-82601794195394%3Aloc-90&hydadcr=19941_2155511&keywords=arduino+uno&qid=1692594053&sr=8-7">
+                    <img src="Arduino uno.jpeg" alt="Arduino_Uno" ><hr>
+                    </a>
+                <h2>ARDUINO UNO R3</h2>
+                <p>ARDUINO SMD UNO R3 Board ATmega328P </p>
+                <p class="price">Rs.549</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </section>
+        </div>
+        <div class="column">
+            <section class="product">
+                <a href="https://www.amazon.in/RoboElectrixx-soldered-Compatible-Arduino-piece-1/dp/B0C3Y9Y1GM/ref=sr_1_1_sspa?crid=BIO0132NZH9G&keywords=arduino+nano&qid=1692594302&sprefix=arduino+%2Caps%2C443&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">
+                    <img src="Arduino_nano.jpeg" alt="Arduino_Nano" ><hr>
+                    </a>
+                <h2>ARDUINO NANO</h2>
+                <p>RoboElectrixx Nano V3 CH 340 with USB Cable soldered board</p>
+                <p class="price">Rs.514</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </section>
+        </div>
+        <div class="column">
+            <section class="product">
+                <a href="https://www.amazon.in/Robodo-W2-Wireless-Bluetooth-Transceiver/dp/B073Q2HY4S/ref=sr_1_3?crid=CF343SAL5HZ4&keywords=hc-05+bluetooth+module&qid=1692594422&sprefix=%2Caps%2C233&sr=8-3">
+                    <img src="BT.jpeg" alt="HC-05 Bluetooth Model" ><hr>
+                    </a>
+                <h2>HC-05 Bluetooth Model</h2>
+                <p>Robodo W2 Hc 05 Wireless Bluetooth Rf Transceiver Module Serial or TTL or RS232 for Arduino</p>
+                <p class="price">Rs.409</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </section>
+        </div>
+        <div class="column">
+            <section class="product">
+                <a href="https://www.amazon.in/Generic-Sensor-Module-Methane-Detection/dp/B01AUTI0RK/ref=sr_1_2?crid=W952PPLC1ITI&keywords=mq2+gas+sensor&qid=1692594488&sprefix=mq%2Caps%2C256&sr=8-2">
+                    <img src="mq-2 gas_sensor.jpeg" alt="MQ-02 Gas Sensor" ><hr>
+                    </a>
+                <h2>MQ-02 Gas Sensor</h2>
+                <p>MQ 02 Gas Sensor(LPG, i-Butane, Propane, Methane,Alcohol, Hydrogen, Smoke)</p>
+                <p class="price">Rs.184</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </section>
+        </div>
+        <div class="column">
+            <section class="product">
+                <a href="https://www.amazon.in/TechnoCare-AT89S52-Microcontroller-Microprocessor-Programming/dp/B071HQFNC9/ref=sr_1_3?keywords=8051+microcontroller&qid=1692628784&sr=8-3">
+                    <img src="8051.jpeg" alt="8051 Microcontroller IC" ><hr>
+                    </a>
+                <h2>8051 Microcontroller IC</h2>
+                <p>My TechnoCare AT89S52 IC ATMEL 8051 Microcontroller 40 Pin DIP Mount Chip 8 Bit Microprocessor 8Kb ISP(in System Programming) Flash Memory Up to 33MHz Clock Frequency Speed</p>
+                <p class="price">Rs.288</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </section>
+        </div>
+        <div class="column">
+            <section class="product">
+                <a href="https://www.amazon.in/Robodo-SEN2-Ultrasonic-Distance-Detector/dp/B073Q2VZZ4/ref=sr_1_8?crid=HIJGPIWU9J5S&keywords=Ultrasonic+Sensor&qid=1692628919&sprefix=ultrasonic+sensor%2Caps%2C496&sr=8-8">
+                    <img src="Ultrasonic.jpeg" alt="Ultrasonic Sensor" ><hr>
+                    </a>
+                <h2>Ultrasonic Sensor</h2>
+                <p>Robodo SEN2 Ultrasonic Distance Ranging Module Detector Sensor HC Sr04 for Arduno AVR PIC</p>
+                <p class="price">Rs.114</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </section>
+        </div>
+
+      </div>
+
+    
+        
+        
+        
+
+        <footer>
+            <p>&copy; 2023 My E-commerce Store. All rights reserved.</p>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
